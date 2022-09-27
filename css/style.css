@@ -10,12 +10,20 @@ body{
     height: 50px;
 }
 
+h1 {
+    display: block;
+    margin: auto;
+    width: 500px;
+    text-align: center;
+}
+
 .container {
     max-width: 955px;
     border: 2px solid black;
+    border-radius: 13px;
     padding: 33px;
-    overflow-y: scroll;
-    margin-bottom: 23px;
+    margin-bottom: 30px !important;
+    overflow-y: auto;
     margin: auto;
     height: 60vh;
 }
