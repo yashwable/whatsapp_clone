@@ -22,7 +22,7 @@ body{
 
 .message {
     background-color: gray;
-    width: 24px;
+    max-width: 300px;
     padding: 10px;
     margin: 17px 12px;
     border: 2px solid black;

@@ -12,9 +12,15 @@ const append = (message , position) => {
     messageContainer.append(messageElement);
 }
 
-const iname = prompt("Enter your name to join");
-socket.emit('new-user-joined', iname);
+form.addEventListener('submit' ,(e) => {
+    e.preventDefault();
+    const message = messageInp.value;
+    append(`You: ${message}`,'right');
+})
 
-socket.on('user-joined', iname => {
-    append(`${iname} joined the chat`,'right');
+let names = prompt("Enter your name to join");
+socket.emit('new-user-joined', names);
+
+socket.on('user-joined', names => {
+    append(`${names} joined the chat`,'right');
 })
